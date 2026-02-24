@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* ============================= */
+/* THEME VARIABLES */
+/* ============================= */
+
+@theme {
+  --color-brand-primary: #294F7C;
+  --color-brand-accent: #4B90E2;
+
+  --color-success: #00BA00;
+  --color-success-dark: #098309;
+  --color-success-light: #7EFF7E;
+  --color-success-bg: #E2FFE2;
+
+  --color-danger: #FF6A6A;
+  --color-danger-soft: #FF6969;
+  --color-warning: #FFBC70;
+
+  --color-bg-top: #ECF4FB;
+  --color-bg-bottom: #F8FAFC;
+  --color-card: #FFFFFF;
+
+  --color-text-main: #363636;
+  --color-text-secondary: #4B4B4B;
+  --color-text-muted: #8F8F8F;
+}
+
+/* ============================= */
+/* CUSTOM UTILITIES (v4 SAFE) */
+/* ============================= */
+
+@utility bg-body-gradient {
+  background: linear-gradient(
+    114.52deg,
+    var(--color-bg-top) 0%,
+    var(--color-bg-bottom) 100%
+  );
+}
+
+@utility bg-brand-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-primary) 0%,
+    var(--color-brand-accent) 100%
+  );
+}
+
+@utility bg-score-gradient {
+  background: linear-gradient(
+    90deg,
+    #FF6969 0%,
+    #FFBC70 53%,
+    #7EFF7E 100%
+  );
+}
